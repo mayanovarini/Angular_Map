@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+    <script src="js/vendor/angular-leaflet-directive.min.js"></script>
+		<script src="js/vendor/leaflet.js"></script>
+
+    <link href="css/leaflet.css" rel="stylesheet" />
+
+  </head>
+  <body ng-app="WhereIsItApp">
+
+    <div class="header">
+      <div class="container-fluid">
+        <h1 class="pull-left">Where is it?</h1>
+        <a class="pull-right" href="#/about">About</a>
+      </div>
+    </div>
+
+    <div ng-view></div>
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+		<script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/AboutController.js"></script>
+
+    <!-- Directives -->
+
+    <!-- Services -->
+    <script src="js/services/places.js"></script>
+
+    <!-- Helpers -->
+    <script src="js/vendor/helpers.js"></script>
+
+  </body>
+  <!-- need to run python -m SimpleHTTPServer 8000 from terminal to launch it on localhost:8000 -->
+</html>
